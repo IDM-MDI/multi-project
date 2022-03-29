@@ -2,12 +2,13 @@ plugins {
     id 'java'
     id 'application'
 }
-mainClassName = 'edu.by.ishangulyev.Api'
-group 'edu.by.ishangulyev'
+mainClassName = 'com.epam.lab.api.Api'
+group 'com.epam.lab'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {

@@ -1,9 +1,9 @@
-package edu.by.ishangulyev;
+package com.epam.lab.util;
 
 import java.util.Arrays;
 import edu.by.ishangulyev.StringUtils;
 public class Utils {
     public static boolean isAllPositiveNumbers(String... str){
-        return Arrays.stream(str).allMatch(StringUtils::isPositive);
+        return Arrays.stream(str).allMatch(StringUtils::isPositiveNumber);
     }
 }

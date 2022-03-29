@@ -2,17 +2,18 @@ plugins {
     id 'java'
 }
 
-group 'edu.by.ishangulyev'
+group 'com.epam.lab'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation(files('libs/utills-1.3.5.jar'))
+    implementation group: 'edu.by.ishangulyev',name: 'utills', version: '1.3.5'
 }
 
 test {
